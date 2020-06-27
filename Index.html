@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+<style>
+body{
+background-color:yellow;
+</style>
+<script>
+function myFunction(){
+document.getElementById("head").innerHTML="paragraph changed";}</script></br>
+</head>
+<body>
+
+<h2>My first javascript</h2>
+<p id="head">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button><br>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML=Date()">
+click to display date and time
+</button>
+
+
+<p id="demo"></p> 
+<h2>What can javascript DO</h2>
+<button type="button" onclick='document.getElementById("demo").innerHTML="hello javascript!"'>click here</button><br>
+<br>
+
+
+<button onclick= "document.getElementById('myimage').src='pic_bulbon.gif'">turn on the light</button>
+<img id="myimage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myimage').src='pic_bulboff.gif'">turn off the light</button><br>
+
+
+<p id="hide">javascript can hide html elements.</p>
+<button type="button" onclick="document.getElementById('hide').style.display='none'">click Me</button><br>
+
+
+<p id="big">javascript can change the style of an html elements.</p>
+<button type="button" onclick="document.getElementById('big').style.fontSize='35px'">click Me</button><br>
+<br>
+
+<p id="scripting"></p>
+<script>document.getElementById("scripting").innerHTML="My First javascript";</script>
+
+
+<h2>My first web page</h2>
+<p id="first">my first paragraph</p>
+<script>document.getElementById("first").innerHTML= 6036+ 66;</script><br>
+
+<button type="button" onclick="document.write(6102-66)">Try it</button><br>
+
+
+<script>window.alert(51-2);</script>
+
+<script>console.log(51-2);</script><br>
+
+
+
+<p id="var">A <b>javascript program</b> is a list of statements to be executed by a computer</p>
+<script>
+var x,y,z;
+x=49;
+y=2;
+z=x+y;
+document.getElementById("var").innerHTML="the value of z is"+z;
+</script>
+
+
+
+<button type="button" onclick="myFunction()">here</button><br>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>function myFunction(){
+document.getElementById("demo1").innerHTML= "hello sir/mam";
+document.getElementById("demo2").innerHTML= "how are you?";
+}
+</script>
+
+
+<p id="direct"></p>
+<script>
+x=5+"2"+3;
+document.getElementById("direct").innerHTML= x;</script><br>
+
+
+
+<p>this example calls a function which performs a calculation and returns the result.</p>
+<p id="function"></p>
+<script>
+var x=myFunction(3,4)
+document.getElementById("function").innerHTML=x;
+function myFunction(a,b){
+return a*b;}</script>
+
+
+
+<h2>javascript string method</h2>
+<p>the index of() method returns the position of the first occurance of a specified text:</p>
+<p id="type"></p>
+<script>
+var str = "please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+document.getElementById("type").innerHTML = pos;</script>
+</body>
+</html>
